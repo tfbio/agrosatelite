@@ -1,0 +1,7 @@
+<p routerLink="" style="cursor: pointer;">Voltar</p>
+<strong>Detalhes da Fazenda</strong>
+<p>Nome: {{farm.name}}</p>
+<p>ID do dono: {{farm.owner_id}}</p>
+<p>Coordenadas do Centroide: {{farm.centroid}}</p>
+<p routerLink="/register" [state]="[{ data: farm }]" style="cursor: pointer;">Editar</p>
+<p (click)="delete()" style="cursor: pointer;">Excluir</p>

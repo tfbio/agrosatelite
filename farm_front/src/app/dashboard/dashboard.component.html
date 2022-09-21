@@ -1,0 +1,8 @@
+<p routerLink="farm" style="cursor: pointer;">Cadastrar</p>
+<ul>
+  <li *ngFor="let farm of farms">
+      <a [routerLink]="['/details', farm.id]" [state]="[{ data: farm }]">
+        <p>{{farm.name}}</p>
+      </a>
+  </li>
+</ul>
